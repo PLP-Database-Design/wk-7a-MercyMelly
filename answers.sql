@@ -1,4 +1,4 @@
--- QUESTION ONE ...with inserted data
+-- QUESTION ONE ....with inserted data
 
 CREATE TABLE products(
     OrderID INT,
@@ -7,7 +7,8 @@ CREATE TABLE products(
 );
 
 
-INSERT INTO products (OrderID, CustomerName, Product) VALUES
+INSERT INTO products (OrderID, CustomerName, Product) 
+VALUES
 (101, 'John Doe', 'Laptop'),
 (101, 'John Doe', 'Mouse'),
 (102, 'Jane Smith', 'Tablet'),
@@ -23,12 +24,14 @@ CREATE TABLE Customers (
     CustomerName VARCHAR(100)
 );
 
-INSERT INTO Customers (OrderID, CustomerName) VALUES
+INSERT INTO Customers (OrderID, CustomerName) 
+VALUES
 (101, 'John Doe'),
 (102, 'Jane Smith'),
 (103, 'Emily Clark');
 
-INSERT INTO OrderItems (OrderID, Product, Quantity) VALUES
+INSERT INTO OrderItems (OrderID, Product, Quantity) 
+VALUES
 (101, 'Laptop', 2),
 (101, 'Mouse', 1),
 (102, 'Tablet', 3),
